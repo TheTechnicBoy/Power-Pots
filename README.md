@@ -10,7 +10,6 @@ This is a **port / fork** of [FTB Power Pots](https://github.com/FTBTeam/FTB-Pow
 ## Features
 - Adds multiple tiers of *Power Pots*, each consuming more energy and growing faster.
 - Fully compatible with **Botany Pots** crops and recipes.
-- Simple, data-driven registration (easy to extend via datapacks or configs).
 
 ---
 
