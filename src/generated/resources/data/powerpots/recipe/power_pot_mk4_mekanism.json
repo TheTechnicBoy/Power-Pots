@@ -1,15 +1,21 @@
 {
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
     "C": {
-      "item": "mekanism:advanced_control_circuit"
+      "item": "mekanism:ultimate_control_circuit"
     },
     "E": {
       "item": "mekanism:energy_tablet"
     },
     "P": {
-      "item": "powerpots:power_pot_mk1"
+      "item": "powerpots:power_pot_mk3"
     }
   },
   "pattern": [
@@ -19,7 +25,7 @@
   ],
   "result": {
     "count": 1,
-    "id": "powerpots:power_pot_mk2"
+    "id": "powerpots:power_pot_mk4"
   },
   "show_notification": false
 }

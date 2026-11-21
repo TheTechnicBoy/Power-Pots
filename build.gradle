@@ -80,10 +80,10 @@ dependencies {
     implementation group: 'net.darkhax.botanypots', name: 'botanypots-neoforge-1.21.1', version: '21.1.41'
     implementation group: 'net.darkhax.bookshelf', name: 'bookshelf-neoforge-1.21.1', version: '21.1.78'
 
-    implementation "mekanism:Mekanism:${mekanism_version}"
-    runtimeOnly "mekanism:Mekanism:${mekanism_version}:additions"
-    runtimeOnly "mekanism:Mekanism:${mekanism_version}:generators"
-    runtimeOnly "mekanism:Mekanism:${mekanism_version}:tools"
+    compileOnly "mekanism:Mekanism:${mekanism_version}"
+    compileOnly "mekanism:Mekanism:${mekanism_version}:additions"
+    compileOnly "mekanism:Mekanism:${mekanism_version}:generators"
+    compileOnly "mekanism:Mekanism:${mekanism_version}:tools"
 
     runtimeOnly "maven.modrinth:jade:15.10.3+neoforge"
 }

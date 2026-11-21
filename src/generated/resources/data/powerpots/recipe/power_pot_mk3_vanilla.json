@@ -1,0 +1,34 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:mod_loaded",
+        "modid": "mekanism"
+      }
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "E": {
+      "item": "minecraft:emerald"
+    },
+    "P": {
+      "item": "powerpots:power_pot_mk2"
+    }
+  },
+  "pattern": [
+    "DED",
+    "EPE",
+    "DED"
+  ],
+  "result": {
+    "count": 1,
+    "id": "powerpots:power_pot_mk3"
+  },
+  "show_notification": false
+}

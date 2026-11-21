@@ -1,0 +1,38 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_mk3": {
+      "conditions": {
+        "items": [
+          {
+            "items": "powerpots:power_pot_mk3"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "powerpots:power_pot_mk4_mekanism"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_mk3"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "powerpots:power_pot_mk4_mekanism"
+    ]
+  }
+}
