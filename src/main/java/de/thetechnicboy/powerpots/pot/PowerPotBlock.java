@@ -38,8 +38,8 @@ public class PowerPotBlock extends BotanyPotBlock {
             Block.box(2, 1, 3, 3, 7, 13)
     ).reduce((v1, v2) -> Shapes.join(v1, v2, BooleanOp.OR)).get();
     private static final VoxelShape EAST = Stream.of(
-            Block.box(3, 0, 3, 13, 1, 13),  //UNTEN
-            Block.box(13, 1, 2, 14, 7, 14), //LINKS
+            Block.box(3, 0, 3, 13, 1, 13),
+            Block.box(13, 1, 2, 14, 7, 14),
             Block.box(2, 1, 2, 3, 7, 14),
             Block.box(3, 1, 13, 13, 7, 14),
             Block.box(3, 1, 2, 13, 7, 3)
@@ -80,7 +80,6 @@ public class PowerPotBlock extends BotanyPotBlock {
 
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-        // unbedingt LEVEL mit aufnehmen – sonst crasht die Library
         builder.add(WATERLOGGED, LEVEL, HORIZONTAL_FACING);
     }
 
@@ -121,12 +120,10 @@ public class PowerPotBlock extends BotanyPotBlock {
 
     @Override
     public <T extends BlockEntity> BlockEntityTicker<T> getTicker(Level level, BlockState state, BlockEntityType<T> type) {
-        // Wenn Client -> kein Tick nötig (Render läuft separat)
         if (level.isClientSide) {
             return null;
         }
 
-        // Wähle richtigen BlockEntityType basierend auf dem Tier
         return switch (tier) {
             case MK1 -> createTickerHelper(type, PowerPots.POWER_POT_MK1_BE.get(), PowerPotTile.MK1Tile::tick);
             case MK2 -> createTickerHelper(type, PowerPots.POWER_POT_MK2_BE.get(), PowerPotTile.MK2Tile::tick);

@@ -49,9 +49,7 @@ public class PowerPotRenderer implements BlockEntityRenderer<BotanyPotBlockEntit
     }
 
     public static void applyRotation(AxisAlignedRotation rotation, PoseStack pose) {
-        // Applies the rotation to the render.
         pose.mulPose(rotation.rotation);
-        // Realigns the render with the original axis-aligned position.
         pose.translate(rotation.offset.x(), rotation.offset.y(), rotation.offset.z());
     }
 
@@ -83,7 +81,6 @@ public class PowerPotRenderer implements BlockEntityRenderer<BotanyPotBlockEntit
             }
         }
 
-        //&& Minecraft.getInstance().getBlockEntityRenderDispatcher().camera.getPosition().y >= pos.getY() <- Original from BotanyPots
         if (!soilItem.isEmpty() ) {
             if (soil != null || (crop != null && soilItem.getItem() instanceof BlockItem && isGrowing)) {
                 pose.pushPose();

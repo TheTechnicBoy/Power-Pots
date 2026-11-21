@@ -44,7 +44,6 @@ public class ModRecipeProvider extends RecipeProvider {
 
     private void addMekanismRecipes(RecipeOutput output) {
 
-        // MK1 - Basic Control Circuit
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, PowerPots.POWER_POT_MK1.get())
                 .pattern("ECE")
                 .pattern("CPC")
@@ -56,7 +55,6 @@ public class ModRecipeProvider extends RecipeProvider {
                 .showNotification(false)
                 .save(output, PowerPots.genRL("power_pot_mk1_mekanism"));
 
-        // MK2 - Advanced Control Circuit
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, PowerPots.POWER_POT_MK2.get())
                 .pattern("ECE")
                 .pattern("CPC")
@@ -68,7 +66,6 @@ public class ModRecipeProvider extends RecipeProvider {
                 .showNotification(false)
                 .save(output, PowerPots.genRL("power_pot_mk2_mekanism"));
 
-        // MK3 - Elite Control Circuit
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, PowerPots.POWER_POT_MK3.get())
                 .pattern("ECE")
                 .pattern("CPC")
@@ -80,7 +77,6 @@ public class ModRecipeProvider extends RecipeProvider {
                 .showNotification(false)
                 .save(output, PowerPots.genRL("power_pot_mk3_mekanism"));
 
-        // MK4 - Ultimate Control Circuit
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, PowerPots.POWER_POT_MK4.get())
                 .pattern("ECE")
                 .pattern("CPC")
@@ -95,7 +91,6 @@ public class ModRecipeProvider extends RecipeProvider {
 
     private void addVanillaRecipes(RecipeOutput output) {
 
-        // MK1 - Copper and Redstone
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, PowerPots.POWER_POT_MK1.get())
                 .pattern("CRC")
                 .pattern("RPR")
@@ -107,7 +102,6 @@ public class ModRecipeProvider extends RecipeProvider {
                 .showNotification(false)
                 .save(output, PowerPots.genRL("power_pot_mk1_vanilla"));
 
-        // MK2 - Gold and Quartz
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, PowerPots.POWER_POT_MK2.get())
                 .pattern("GQG")
                 .pattern("QPQ")
@@ -119,7 +113,6 @@ public class ModRecipeProvider extends RecipeProvider {
                 .showNotification(false)
                 .save(output, PowerPots.genRL("power_pot_mk2_vanilla"));
 
-        // MK3 - Diamonds and Emeralds
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, PowerPots.POWER_POT_MK3.get())
                 .pattern("DED")
                 .pattern("EPE")
@@ -131,7 +124,6 @@ public class ModRecipeProvider extends RecipeProvider {
                 .showNotification(false)
                 .save(output, PowerPots.genRL("power_pot_mk3_vanilla"));
 
-        // MK4 - Netherite and Echo Shards
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, PowerPots.POWER_POT_MK4.get())
                 .pattern("NEN")
                 .pattern("EPE")
