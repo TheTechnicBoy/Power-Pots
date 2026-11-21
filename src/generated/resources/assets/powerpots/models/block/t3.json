@@ -1,0 +1,7 @@
+{
+  "parent": "powerpots:block/power-pot",
+  "textures": {
+    "base": "powerpots:block/t3",
+    "particle": "powerpots:block/t3"
+  }
+}

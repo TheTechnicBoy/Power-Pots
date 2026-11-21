@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "C": {
+      "item": "mekanism:ultimate_control_circuit"
+    },
+    "E": {
+      "item": "mekanism:energy_tablet"
+    },
+    "P": {
+      "item": "powerpots:power_pot_mk3"
+    }
+  },
+  "pattern": [
+    "ECE",
+    "CPC",
+    "ECE"
+  ],
+  "result": {
+    "count": 1,
+    "id": "powerpots:power_pot_mk4"
+  },
+  "show_notification": false
+}
